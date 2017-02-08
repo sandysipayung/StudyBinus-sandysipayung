@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<form action="table.html" method="post">
+        <table align="center" border="1" width="500">
+            <tr>
+                <td colspan="3" align="center">REGISTRASI</td>
+            </tr>
+            
+            <tr>
+                <td>Username</td>
+                <td>:</td>
+                <td><input type="text" name="username" id="username"/></td>
+            </tr>
+            
+            <tr>
+                <td>Password</td>
+                <td>:</td>
+                <td><input type="password" name="password" id="password"/></td>
+            </tr> 
+          
+          	<tr>
+                <td>Alamat</td>
+                <td>:</td>
+                <td><textarea name="alamat" id="alamat"/></textarea></td>
+            </tr>
+            
+            <tr>
+                <td>Gender</td>
+                <td>:</td>
+                <td>
+                    <input type="radio" name="gender1" id="gender1"/> Pria
+                    &nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="gender1" id="gender1"/> Wanita
+                </td>                
+            </tr> 
+            
+            <tr>
+                <td>Kota</td>
+                <td>:</td>
+                <td>
+                	<select name="kota" id="kota"/>
+                		<option value="">--------</option>
+                        <option value="jkt">Jakarta</option>
+                        <option value="bdg">Bandung</option>
+                        <option value="mdn">Medan</option>
+                        <option value="sby">Surabaya</option>    
+                	</select>
+                </td>
+            </tr>
+                        
+           	<tr>
+            	<td>Hobby</td>
+                <td>:</td>
+                <td>
+                	<input type="checkbox" name="cb1" id="cb1" /> Browsing<br/>
+                	<input type="checkbox" name="cb2" id="cb2" /> Makan<br/>
+                	<input type="checkbox" name="cb3" id="cb3" /> Balap Liar
+                </td>		
+           	</tr>
+             
+            <tr>
+                <td colspan="3" align="center">
+                    <input type="submit" name="submitregister" value="REGISTER"/>
+                    &nbsp;&nbsp;&nbsp;
+                    <input type="reset" name="reset" value="RESET"/>
+                </td>
+            </tr>     
+        </table>
+	</form>
+</body>
+</html>

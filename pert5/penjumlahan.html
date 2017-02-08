@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>PENJUMLAHAN JAVASCRIPT</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            function jumlah(a,b)
+            {
+                a=document.getElementById("nilai1").value;
+                b=document.getElementById("nilai2").value;
+                total=parseInt(a) + parseInt(b);
+                //alert(total);
+                document.getElementById("hasil").value=total;
+            }
+        </script>
+    </head>
+    <body>
+        <input size="5" type="text" name="nilai1" id="nilai1"/>
+        +
+        <input size="5" type="text" name="nilai2" id="nilai2"/>
+        <input type="button" name="hitung" id="hitung" value="=" onclick="jumlah()"/>
+        <input size="5" type="text" name="hasil" id="hasil"/>
+       
+    </body>
+</html>

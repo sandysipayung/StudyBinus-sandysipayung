@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+    <script>
+        function cek()
+        {
+            username=document.getElementById("username").value;
+            password=document.getElementById("password").value;
+            
+            if(username=="")
+            {
+                alert("username tidak boleh kosong");
+                return false;
+            }
+            if(password=="")
+            {
+                alert("password tidak boleh kosong");
+                return false;
+            }
+            
+        }
+    </script>
+</head>
+
+<body>
+    <form action="index.html" method="post" onsubmit="return cek()">
+        <table align="center" border="2" width="300" height="200">
+            <tr>
+                <td colspan="3" align="center">LOGIN</td>
+            </tr>
+
+            <tr>
+                <td>Username</td>
+                <td>:</td>
+                <td><input type="text" name="txt_username" id="username"/></td>
+            </tr>
+
+            <tr>
+                <td>Password</td>
+                <td>:</td>
+                <td><input type="password" name="txt_password" id="password"/></td>
+            </tr> 
+
+             <tr>
+                <td colspan="3" align="center">
+                    <input type="submit" name="submit" value="LOGIN"/>
+                        &nbsp;&nbsp;&nbsp;
+                    <input type="reset" name="reset" value="RESET"/>
+                </td>
+            </tr>     
+        </table>
+    </form>
+</body>
+</html>
